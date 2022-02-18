@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutTooLCOMA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/SpinnerCOMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutOption1COMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <Spinner
+                android:id="@+id/SpinnerBaudRateCOMA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonCOMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关按钮"
+                android:textOff="开"
+                android:textOn="关"
+                android:checked="false"
+                android:width="90dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutRecv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutRecDisp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editTextRecDisp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:editable="false"
+                android:gravity="top"
+                android:longClickable="false"
+                android:scrollbars="vertical"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutRecTool"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/ButtonClear"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/clear"
+                    android:width="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutDisp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCOMAB"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/editTextCOMA"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="@string/input_data_hint" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutRecTool"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnSendCMD"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/sendcmd"
+                    android:width="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutBtn"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnGetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/getinfo" />
+
+        <Button
+            android:id="@+id/btnReboot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/reboot" />
+
+        <Spinner
+            android:id="@+id/spinnerWorkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px" />
+
+        <Button
+            android:id="@+id/btnWorkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/workmode" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutIso14443Btn"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnReqA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/reqa" />
+
+        <Button
+            android:id="@+id/btnAntiColl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/anticoll" />
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/select" />
+
+        <Button
+            android:id="@+id/btnHaltA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/halta" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutMifare"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutSectorBtn"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerSector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10px" />
+
+            <Spinner
+                android:id="@+id/spinnerBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutAnthParam"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinnerKeyGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10px" />
+
+            <EditText
+                android:id="@+id/editTextKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/input_key"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAnthParam"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAnthKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/anth" />
+
+        <Button
+            android:id="@+id/btnReadBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/readblock" />
+
+        <Button
+            android:id="@+id/btnWriteBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/writeblock" />
+
+        <Button
+            android:id="@+id/btnApduSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:text="@string/sendapdu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutIso14443-4Btn"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnReqAntiSel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/reqantsel" />
+
+        <Button
+            android:id="@+id/btnRats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10px"
+            android:text="@string/rats" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutIso14443-4Btn"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editApduCmd"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutIapMode"
+        android:orientation="vertical"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutIapMode"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnOpenFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10px"
+                android:text="@string/openfile" />
+
+            <Button
+                android:id="@+id/btnUpdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10px"
+                android:text="@string/updata" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/barUpdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

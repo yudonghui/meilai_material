@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mylike.keepalive">
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取MAC地址-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="com.huawei.android.launcher.settings" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher2.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher3.permission.INSTALL_SHORTCUT" />
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher2.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher3.permission.UNINSTALL_SHORTCUT" />
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+
+    <!-- 其他快捷方式权限 -->
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="com.huawei.android.launcher.LauncherProvider" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+
+    <!-- Needed only if your calling app reads numbers from the `PHONE_STATE`
+         intent action. -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <permission android:name="com.mylike.keepalive.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" /> <!--这里com.xiaomi.mipushdemo改成app的包名-->
+
+    <uses-permission android:name="com.mylike.keepalive.permission.MIPUSH_RECEIVE" /><!--这里com.xiaomi.mipushdemo改成app的包名-->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.mylike.keepalive.XApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:requestLegacyExternalStorage="true"
+        android:sharedUserId="android.uid.system"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.mylike.keepalive.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <service
+            android:name="live_library.service.LocalService"
+            android:exported="true"
+            android:process=":local"></service>
+        <service
+            android:name="live_library.service.RemoteService"
+            android:exported="true"
+            android:process=":remote"></service>
+
+        <receiver android:name="live_library.receive.NotificationClickReceiver">
+            <intent-filter>
+                <action android:name="CLICK_NOTIFICATION"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="live_library.onepx.OnePixelActivity"
+            android:launchMode="singleInstance"
+
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/onePixelActivity"></activity>
+
+        <service
+            android:name="live_library.service.JobHandlerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
+
+
+        <provider
+            android:authorities="com.mylike.preference"
+            android:name="live_library.pro_sp.SharedPreferenceProvider"
+            android:process=":remote"
+            android:exported="false"/>
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="f4096308a9f4228f67e0155a99b64759" >
+        </meta-data>
+
+
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+
+        <!--注：此service必须在3.0.1版本以后（包括3.0.1版本）加入-->
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:exported="true"
+            android:name="com.mylike.keepalive.DemoMessageReceiver">
+            <!--这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名-->
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

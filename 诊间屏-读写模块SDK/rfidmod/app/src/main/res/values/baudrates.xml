@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="baudrates_value">
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>
+
+    <string-array name="sector_name">
+        <item>sector 0</item>
+        <item>sector 1</item>
+        <item>sector 2</item>
+        <item>sector 3</item>
+        <item>sector 4</item>
+        <item>sector 5</item>
+        <item>sector 6</item>
+        <item>sector 7</item>
+        <item>sector 8</item>
+        <item>sector 9</item>
+        <item>sector 10</item>
+        <item>sector 11</item>
+        <item>sector 12</item>
+        <item>sector 13</item>
+        <item>sector 14</item>
+        <item>sector 15</item>
+    </string-array>
+
+    <string-array name="block_name">
+        <item>block 0</item>
+        <item>block 1</item>
+        <item>block 2</item>
+        <item>block 3</item>
+    </string-array>
+
+    <string-array name="keygroup_name">
+        <item>KEYA</item>
+        <item>KEYB</item>
+    </string-array>
+
+    <string-array name="workmode_name">
+        <item>主动输出卡号</item>
+        <item>仅命令通信</item>
+    </string-array>
+
+</resources>
